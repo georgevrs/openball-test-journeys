@@ -1,0 +1,1527 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="How openball behaves, walked in a real browser. Test documentation, sample data only.">
+      
+      
+      
+        <link rel="canonical" href="https://georgevrs.github.io/openball-test-journeys/journeys/P4-find-and-roster/">
+      
+      
+        <link rel="prev" href="../P3-group-game/">
+      
+      
+        <link rel="next" href="../J02-book-a-team/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>P4 · Finding a game and the roster check - openball test journeys</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#p4-finding-a-game-and-the-roster-check-that-explains-itself" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <strong>Test documentation</strong> &mdash; sample data only
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="openball test journeys" class="md-header__button md-logo" aria-label="openball test journeys" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            openball test journeys
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              P4 · Finding a game and the roster check
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="openball test journeys" class="md-nav__button md-logo" aria-label="openball test journeys" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    openball test journeys
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CATALOGUE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Case catalogue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LOGIN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    How tests sign in
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Anyone
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Anyone
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../V1-visitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    V1 · The visitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../L1-signin-and-session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    L1 · Signing in and out
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../W1-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    W1 · Who may open what
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Players
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Players
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../S1-search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    S1 · Finding a pitch and a game
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P1-book-a-pitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P1 · Booking a whole pitch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E3-organised-game-cutoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    E3 · An organised game and the cutoff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P2-open-game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P2 · Open games (before #606)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M1-my-games/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    M1 · My games, when empty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../R1-profile-and-account/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    R1 · Profile and closing the account
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Groups and teams
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Groups and teams
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P3-group-game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    P3 · A group books a whole field
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    P4 · Finding a game and the roster check
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    P4 · Finding a game and the roster check
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-flow-is-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this flow is for
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-flow-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      The flow at a glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-from-the-recorded-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step by step (from the recorded run)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by step (from the recorded run)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p4-find-a-game-the-area-is-optional-381-item-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 find a game: the area is optional (#381 item 7)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p4-find-a-game-a-date-10002200-finds-what-shows-381-item-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 find a game: Καισαριανή, a date, 10:00–22:00 finds what «Ανοιχτά παιχνίδια» shows (#381 item 8)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p4-a-team-line-up-the-roster-check-explains-itself-and-so-does-the-2nd-organiser-refusal-381-items-9-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 a team line-up: the roster check explains itself, and so does the 2nd Organiser refusal (#381 items 9-11)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      What you should see
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J02-book-a-team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    J02 · Book a team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J03-book-a-position/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    J03 · Book a position
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../T1-team-lineup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    T1 · Making a team and the line-up board
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../T2-team-permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    T2 · Who may do what in a team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../T3-team-games/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    T3 · Team games and notifications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E1-organised-open-game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    E1 · Organised open games
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E2-team-edit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    E2 · Editing the team's name and crest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Venue owners and admins
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Venue owners and admins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../O1-owner-onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O1 · Becoming an owner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../O2-owner-daily/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O2 · The owner's day
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A1-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    A1 · The platform admin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Everything at once
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Everything at once
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../X1-crawler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    X1 · The link crawler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-flow-is-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this flow is for
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-flow-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      The flow at a glance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-from-the-recorded-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step by step (from the recorded run)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step by step (from the recorded run)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#p4-find-a-game-the-area-is-optional-381-item-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 find a game: the area is optional (#381 item 7)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p4-find-a-game-a-date-10002200-finds-what-shows-381-item-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 find a game: Καισαριανή, a date, 10:00–22:00 finds what «Ανοιχτά παιχνίδια» shows (#381 item 8)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p4-a-team-line-up-the-roster-check-explains-itself-and-so-does-the-2nd-organiser-refusal-381-items-9-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      P4 a team line-up: the roster check explains itself, and so does the 2nd Organiser refusal (#381 items 9-11)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-should-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      What you should see
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="p4-finding-a-game-and-the-roster-check-that-explains-itself">P4 · Finding a game, and the roster check that explains itself<a class="headerlink" href="#p4-finding-a-game-and-the-roster-check-that-explains-itself" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Who</strong></td>
+<td>A player; a group organiser</td>
+</tr>
+<tr>
+<td><strong>Test id</strong></td>
+<td><code>P4</code> (three tests)</td>
+</tr>
+<tr>
+<td><strong>Needs</strong></td>
+<td>the local stack (and its database, to name the games the list holds)</td>
+</tr>
+<tr>
+<td><strong>Catalogue</strong></td>
+<td>P-15, P-16 (the second test is skipped since #606), G-01 … G-03 in <a href="../../CATALOGUE/">CATALOGUE.md</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-this-flow-is-for">What this flow is for<a class="headerlink" href="#what-this-flow-is-for" title="Permanent link">&para;</a></h2>
+<p>Three things the business analysis asked to be clear:</p>
+<ol>
+<li><strong>The area is optional</strong> when looking for a game: leaving it empty searches everywhere, never refuses.</li>
+<li><strong>Searching by area, day and time finds what the games list shows</strong>, and when a <strong>group size</strong> hides open games (open
+   games take one seat at a time, so a size does not apply), the page says how many are hidden and offers the way back.</li>
+<li><strong>A group organiser's roster check explains itself</strong> in plain sentences: how many are declared, that the organiser
+   counts, what is missing, and why the second organiser can or cannot be chosen.</li>
+</ol>
+<h2 id="the-flow-at-a-glance">The flow at a glance<a class="headerlink" href="#the-flow-at-a-glance" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Home → «Game search»] --&gt; B{Area filled?}
+    B --&gt;|empty| B1[Results for every area&lt;br/&gt;or an empty state, never a refusal]
+    B --&gt;|Καισαριανή + day + time| C[The same game the games list shows]
+    C --&gt; D[Add a group size of 1]
+    D --&gt; E[«Open games hidden by group size: N»&lt;br/&gt;+ «Search without a group size»]
+    E --&gt; C
+    F[Home → «Pitch search» → a 5x5 hour] --&gt; G[«Gather your group»]
+    G --&gt; H[Add four people by name and e-mail]
+    H --&gt; I[Declaration: add basics]
+    I --&gt; J[The roster check in plain sentences&lt;br/&gt;the organiser already counts, codes explained]
+    J --&gt; K[Save: saved, and told why the organiser is on the list]
+    K --&gt; L[«Second organiser»: four choices]</code></pre>
+<h2 id="step-by-step-from-the-recorded-run">Step by step (from the recorded run)<a class="headerlink" href="#step-by-step-from-the-recorded-run" title="Permanent link">&para;</a></h2>
+<!-- walk:steps P4 -->
+
+<h4 id="p4-find-a-game-the-area-is-optional-381-item-7">P4 find a game: the area is optional (#381 item 7)<a class="headerlink" href="#p4-find-a-game-the-area-is-optional-381-item-7" title="Permanent link">&para;</a></h4>
+<p><strong>Step 1.</strong> open the home page</p>
+<p><img src="../../assets/p4/01-t1-open-the-home-page.webp" width="720" alt="open the home page"></p>
+<p><strong>Step 2.</strong> They tap «Game search».</p>
+<p><sub>on screen: tap «Αναζήτηση παιχνιδιού»</sub></p>
+<p><img src="../../assets/p4/02-t1-tap.webp" width="720" alt="They tap «Game search»."></p>
+<p><strong>Step 3.</strong> They leave the area empty, choose a date and search.</p>
+<p><sub>on screen: leave «Περιοχή» as it is, date 2026-10-26, press «Αναζήτηση»</sub></p>
+<blockquote>
+<p>Note: #381 item 7: on main the browser refuses with «Please select an item in the list»</p>
+</blockquote>
+<p><img src="../../assets/p4/03-t1-leave-as-it-is-date-2026-10-26-press.webp" width="720" alt="They leave the area empty, choose a date and search."></p>
+<p><strong>Step 4.</strong> The answer covers every area: results, or an empty state; never a refusal.</p>
+<p><sub>on screen: the answer covers every area: results or the empty state, never a refusal</sub></p>
+<blockquote>
+<p>Note: #381 item 7</p>
+</blockquote>
+<p><img src="../../assets/p4/04-t1-the-answer-covers-every-area-results-or-the-empt.webp" width="720" alt="The answer covers every area: results, or an empty state; never a refusal."></p>
+<h4 id="p4-find-a-game-a-date-10002200-finds-what-shows-381-item-8">P4 find a game: Καισαριανή, a date, 10:00–22:00 finds what «Ανοιχτά παιχνίδια» shows (#381 item 8)<a class="headerlink" href="#p4-find-a-game-a-date-10002200-finds-what-shows-381-item-8" title="Permanent link">&para;</a></h4>
+<p><em>This test was skipped in the recorded run (it needs a feature the build did not have, or another target).</em></p>
+<h4 id="p4-a-team-line-up-the-roster-check-explains-itself-and-so-does-the-2nd-organiser-refusal-381-items-9-11">P4 a team line-up: the roster check explains itself, and so does the 2nd Organiser refusal (#381 items 9-11)<a class="headerlink" href="#p4-a-team-line-up-the-roster-check-explains-itself-and-so-does-the-2nd-organiser-refusal-381-items-9-11" title="Permanent link">&para;</a></h4>
+<p><strong>Step 1.</strong> sign in as a new player</p>
+<p><img src="../../assets/p4/01-t3-sign-in-as-a-new-player.webp" width="720" alt="sign in as a new player"></p>
+<p><strong>Step 2.</strong> home → «Αναζήτηση γηπέδου»</p>
+<p><img src="../../assets/p4/02-t3-home.webp" width="720" alt="home → «Αναζήτηση γηπέδου»"></p>
+<p><strong>Step 3.</strong> a 5x5 pitch on 2026-10-27, 18:00–23:00: open the first result</p>
+<p><img src="../../assets/p4/03-t3-a-5x5-pitch-on-2026-10-27-18-00-23-00-open-the-f.webp" width="720" alt="a 5x5 pitch on 2026-10-27, 18:00–23:00: open the first result"></p>
+<p><strong>Step 4.</strong> tap «Μάζεψε την παρέα σου»: a draft for this pitch</p>
+<p><img src="../../assets/p4/04-t3-tap-a-draft-for-this-pitch.webp" width="720" alt="tap «Μάζεψε την παρέα σου»: a draft for this pitch"></p>
+<p><strong>Step 5.</strong> They add a friend by name and e-mail.</p>
+<p><sub>on screen: add Ελένη … by name and email («Πρόσθεσε κάποιον χειροκίνητα»)</sub></p>
+<p><img src="../../assets/p4/05-t3-add-by-name-and-email.webp" width="720" alt="They add a friend by name and e-mail."></p>
+<p><strong>Step 6.</strong> They add a friend by name and e-mail.</p>
+<p><sub>on screen: add Βασίλης … by name and email («Πρόσθεσε κάποιον χειροκίνητα»)</sub></p>
+<p><img src="../../assets/p4/06-t3-add-by-name-and-email.webp" width="720" alt="They add a friend by name and e-mail."></p>
+<p><strong>Step 7.</strong> They add a friend by name and e-mail.</p>
+<p><sub>on screen: add Κώστας … by name and email («Πρόσθεσε κάποιον χειροκίνητα»)</sub></p>
+<p><img src="../../assets/p4/07-t3-add-by-name-and-email.webp" width="720" alt="They add a friend by name and e-mail."></p>
+<p><strong>Step 8.</strong> They add a friend by name and e-mail.</p>
+<p><sub>on screen: add Μαρία … by name and email («Πρόσθεσε κάποιον χειροκίνητα»)</sub></p>
+<p><img src="../../assets/p4/08-t3-add-by-name-and-email.webp" width="720" alt="They add a friend by name and e-mail."></p>
+<p><strong>Step 9.</strong> tap «Συνέχεια στη δήλωση»</p>
+<p><img src="../../assets/p4/09-t3-tap.webp" width="720" alt="tap «Συνέχεια στη δήλωση»"></p>
+<p><strong>Step 10.</strong> They add the friend as a basic player.</p>
+<p><sub>on screen: «Προσθήκη βασικού»: Ελένη …</sub></p>
+<p><img src="../../assets/p4/10-t3-step.webp" width="720" alt="They add the friend as a basic player."></p>
+<p><strong>Step 11.</strong> They add the friend as a basic player.</p>
+<p><sub>on screen: «Προσθήκη βασικού»: Βασίλης …</sub></p>
+<p><img src="../../assets/p4/11-t3-step.webp" width="720" alt="They add the friend as a basic player."></p>
+<p><strong>Step 12.</strong> They add the friend as a basic player.</p>
+<p><sub>on screen: «Προσθήκη βασικού»: Κώστας …</sub></p>
+<p><img src="../../assets/p4/12-t3-step.webp" width="720" alt="They add the friend as a basic player."></p>
+<p><strong>Step 13.</strong> They add the friend as a basic player.</p>
+<p><sub>on screen: «Προσθήκη βασικού»: Μαρία …</sub></p>
+<p><img src="../../assets/p4/13-t3-step.webp" width="720" alt="They add the friend as a basic player."></p>
+<p><strong>Step 14.</strong> The roster check says in plain sentences how many are declared, that the organiser counts already, and what is next.</p>
+<p><sub>on screen: the roster check: plain sentences, a next step, that I already count, codes only as a support detail</sub></p>
+<blockquote>
+<p>Note: #381 item 9: on main «2 προϋποθέσεις εμποδίζουν την πρόοδο» with bare V-01 / V-08 and no next step</p>
+</blockquote>
+<p><img src="../../assets/p4/14-t3-the-roster-check-plain-sentences-a-next-step-tha.webp" width="720" alt="The roster check says in plain sentences how many are declared, that the organiser counts already, and what is"></p>
+<p><strong>Step 15.</strong> They save: «Saved», and the page explains why the organiser is on the list.</p>
+<p><sub>on screen: press «Αποθήκευση»: saved, and told why I am on the list now</sub></p>
+<blockquote>
+<p>Note: #381 item 10: on main a bare «Αποθηκεύτηκε.» and the Organiser appears unexplained</p>
+</blockquote>
+<p><img src="../../assets/p4/15-t3-press-saved-and-told-why-i-am-on-the-list-now.webp" width="720" alt="They save: «Saved», and the page explains why the organiser is on the list."></p>
+<p><strong>Step 16.</strong> They open «Second organiser» and see the four people who can be chosen.</p>
+<p><sub>on screen: open «2ος Διοργανωτής» and choose one of the four</sub></p>
+<p><img src="../../assets/p4/16-t3-open-2-and-choose-one-of-the-four.webp" width="720" alt="They open «Second organiser» and see the four people who can be chosen."></p>
+<p><strong>Step 17.</strong> They try to name the second organiser too early: the refusal says which condition failed and what to do.</p>
+<p><sub>on screen: press «Ορισμός 2ου Διοργανωτή»: the refusal says which condition failed and what to do</sub></p>
+<blockquote>
+<p>Note: #381 item 11: on main «Αυτό το άτομο δεν μπορεί να οριστεί ως 2ος διοργανωτής.» and nothing else</p>
+</blockquote>
+<p><img src="../../assets/p4/17-t3-press-2-the-refusal-says-which-conditio.webp" width="720" alt="They try to name the second organiser too early: the refusal says which condition failed and what to do."></p>
+<!-- /walk:steps -->
+
+<h2 id="what-you-should-see">What you should see<a class="headerlink" href="#what-you-should-see" title="Permanent link">&para;</a></h2>
+<ul>
+<li>With no area the answer covers every area; an empty result is an explanation, not an error.</li>
+<li>The hidden-games sentence names its cause («group size») and the count, and the link removes just that filter, keeping
+  the day, time and area.</li>
+<li>The roster check never shows codes without words, always says what is next, and counts the organiser from the start.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../P3-group-game/" class="md-footer__link md-footer__link--prev" aria-label="Previous: P3 · A group books a whole field">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                P3 · A group books a whole field
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../J02-book-a-team/" class="md-footer__link md-footer__link--next" aria-label="Next: J02 · Book a team">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                J02 · Book a team
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  
+    <script src="../../vendor/mermaid.min.js"></script>
+  
+
+  </body>
+</html>

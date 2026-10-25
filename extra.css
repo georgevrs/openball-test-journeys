@@ -1,0 +1,32 @@
+/* Greek-safe system fonts: every one of these has the Greek alphabet; no web font is downloaded. */
+:root {
+  --md-text-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Greek", sans-serif;
+  --md-code-font: ui-monospace, "Cascadia Code", "SF Mono", Consolas, Menlo, "DejaVu Sans Mono", monospace;
+}
+
+/* Screenshots: never wider than the column, with a hairline so a white page does not melt into the background. */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
+
+/* The banner: calm, readable, centred. */
+.md-banner {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-default-fg-color);
+  text-align: center;
+  font-size: 0.7rem;
+}
+.md-banner a { color: inherit; }
+
+/* Wide tables scroll inside themselves rather than the page (390 px phones). */
+.md-typeset__scrollwrap { margin: 1em 0; }
+.md-typeset table:not([class]) { font-size: 0.7rem; }
+
+/* Mermaid diagrams: scroll sideways inside the box rather than push the page wide. */
+.md-typeset .mermaid { overflow-x: auto; text-align: center; }
+
+/* The facts tables at the top of a journey page have an empty header row: hide it. */
+.md-typeset table:not([class]) thead:not(:has(th:not(:empty))) { display: none; }
